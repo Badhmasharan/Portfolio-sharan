@@ -1,0 +1,11 @@
+Model Information:
+* title:	Miss Minutes Low Poly - Rigged
+* source:	https://sketchfab.com/3d-models/miss-minutes-low-poly-rigged-9d8d7644bdda4ac59c57de66a654a908
+* author:	kvden (https://sketchfab.com/kvden_)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Miss Minutes Low Poly - Rigged" (https://sketchfab.com/3d-models/miss-minutes-low-poly-rigged-9d8d7644bdda4ac59c57de66a654a908) by kvden (https://sketchfab.com/kvden_) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
