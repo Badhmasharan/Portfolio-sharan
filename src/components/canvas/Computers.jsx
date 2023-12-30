@@ -8,7 +8,7 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./ghost.gltf");
 
-  const scaleFactor = isMobile ? .7: .7; // Adjust the scale factor
+  const scaleFactor = isMobile ? .5: .5; // Adjust the scale factor
 
   return (
     <mesh>
@@ -25,7 +25,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={[scaleFactor, scaleFactor, scaleFactor]} // Adjust the scale factor
-        position={isMobile ? [10, -1, -1.1] : [0, -1.125, -0.75]} // Adjust the position
+        position={isMobile ? [10, 0, -1.1] : [0, -1.125, -0.75]} // Adjust the position
         rotation-y={0}
       />
     </mesh>
