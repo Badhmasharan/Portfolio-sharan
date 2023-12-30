@@ -5,16 +5,14 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 
-
-
-
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./miss_minutes_low_poly_-_rigged/scene.gltf");
-  
+  const computer = useGLTF("./ghost.gltf");
+
+  const scaleFactor = isMobile ? .7: .7; // Adjust the scale factor
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.15} groundColor='purple' />
+      <hemisphereLight intensity={1.15} groundColor="purple" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -26,14 +24,15 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={10} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? [10, 10, 10] : [20, 20, 20]}
-        position={isMobile ? [20, -10, -2.2] : [0, -10.25, -1.5]}
+        scale={[scaleFactor, scaleFactor, scaleFactor]} // Adjust the scale factor
+        position={isMobile ? [10, -1, -1.1] : [0, -1.125, -0.75]} // Adjust the position
         rotation-y={0}
-
       />
     </mesh>
   );
 };
+
+
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -55,25 +54,28 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
       shadows
-      dpr={[6, 2]}
-      camera={{ position: [0, 0, 30], fov: 60 }}
+      frameloop='demand'
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      camera={{
+        fov: 45,
+        near: 0.1,
+        far: 200,
+        position: [-4, 3, 6],
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-        autoRotate
-        autoRotateSpeed={20} 
+          autoRotate
           enableZoom={false}
-          
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+        <Computers />
 
-      <Preload all />
+        <Preload all />
+      </Suspense>
     </Canvas>
   );
 };
