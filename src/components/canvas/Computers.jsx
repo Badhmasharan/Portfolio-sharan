@@ -4,35 +4,46 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./ghost.gltf");
 
-  const scaleFactor = isMobile ? .5: .5; // Adjust the scale factor
+  const scaleFactor = isMobile ? 0.5 : 0.5; // Adjust the scale factor
+
+  const [rotation, setRotation] = useState(0);
+
+  const mobilePosition = isMobile ? [0, -1.5, -1] : [0, -1.125, -0.75];
+  const position = isMobile ? mobilePosition : [0, -1.125, -0.75];
+
+  useEffect(() => {
+    const spinInterval = setInterval(() => {
+      // Update rotation over time (adjust the speed as needed)
+      setRotation((prevRotation) => prevRotation + 0.02);
+    }, 16); // Update every 16 milliseconds for smooth rotation
+
+    return () => clearInterval(spinInterval);
+  }, []);
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.15} groundColor="purple" />
+      <hemisphereLight intensity={0.8} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
-        angle={0.12}
+        angle={0.1}
         penumbra={1}
-        intensity={1}
+        intensity={0}
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={10} />
+      <pointLight intensity={8} />
       <primitive
         object={computer.scene}
-        scale={[scaleFactor, scaleFactor, scaleFactor]} // Adjust the scale factor
-        position={isMobile ? [10, 0, -1.1] : [0, -1.125, -0.75]} // Adjust the position
-        rotation-y={0}
+        scale={[scaleFactor, scaleFactor, scaleFactor]}
+        position={position}
+        rotation={[0, rotation, 0]} // Rotate around the Y-axis
       />
     </mesh>
   );
 };
-
-
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -55,7 +66,7 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
@@ -72,8 +83,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
-
+        <Computers isMobile={isMobile} />
         <Preload all />
       </Suspense>
     </Canvas>
