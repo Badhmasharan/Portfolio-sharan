@@ -27,6 +27,8 @@ import {
     tripguide,
     threejs,
     ecommerce,
+    fooddonation,
+    cropcredit,
   } from "../assets";
   
   export const navLinks = [
@@ -209,6 +211,48 @@ import {
       ],
       image: ecommerce,
       source_code_link: "https://github.com/Badhmasharan/REACT-PROJECT",
+    },
+    {
+      name: "AGRI-LOAN PLATFORM",
+      description:
+        "Web platform that allows users to apply and manage their loans seamlessly.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cropcredit,
+      source_code_link: "https://github.com/Badhmasharan/AGRI-LOAN-MANAGEMENT-PORTAL-CropCredit",
+    },
+    {
+      name: "FOOD DONATION PORTAL",
+      description:
+        "A platform where food donation is done seamlessly to the needy without any food waste.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: fooddonation,
+      source_code_link: "https://github.com/Badhmasharan/Food-Donation-portal",
     },
     // {
     //   name: "Job IT",
