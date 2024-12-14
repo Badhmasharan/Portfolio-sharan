@@ -30,6 +30,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import ecommerce from "./ecommerce.png";
+import fooddonation from "./fooddonation.png";
+import cropcredit from "./cropcredit.png";
 import insta from './insta.png';
 export {
   logos,
@@ -65,4 +67,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  cropcredit,
+  fooddonation,
 };

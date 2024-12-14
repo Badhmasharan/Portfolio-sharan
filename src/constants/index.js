@@ -215,7 +215,7 @@ import {
     {
       name: "AGRI-LOAN PLATFORM",
       description:
-        "Web platform that allows users to apply and manage their loans seamlessly.",
+        "Web platform that allows users to apply and manage their loans also Admin can manage them .",
       tags: [
         {
           name: "react",
@@ -228,6 +228,10 @@ import {
         {
           name: "css",
           color: "pink-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "orange-text-gradient",
         },
       ],
       image: cropcredit,
@@ -249,6 +253,10 @@ import {
         {
           name: "css",
           color: "pink-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "blue-text-gradient",
         },
       ],
       image: fooddonation,

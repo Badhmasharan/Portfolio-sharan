@@ -7,12 +7,12 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./ghost.gltf");
 
-  const scaleFactor = isMobile ? 1.5 : 1.75; // Adjust the scale factor for mobile and non-mobile devices
+  const scaleFactor = isMobile ? 0.5 : 0.5; // Adjust the scale factor
 
   const [rotation, setRotation] = useState(0);
 
-  const mobilePosition = isMobile ? [0, -2, -1] : [0, -3.625, -0.75]; // Adjust Y-axis position for mobile and non-mobile devices
-  const position = isMobile ? mobilePosition : [0, -2.625, 3.75];
+  const mobilePosition = isMobile ? [0, -1.5, -1] : [0, -1.125, -0.75];
+  const position = isMobile ? mobilePosition : [0, -1.125, -0.75];
 
   useEffect(() => {
     const spinInterval = setInterval(() => {
@@ -44,7 +44,6 @@ const Computers = ({ isMobile }) => {
     </mesh>
   );
 };
-
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -78,7 +77,12 @@ const ComputersCanvas = () => {
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        
+        <OrbitControls
+          autoRotate
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
         <Computers isMobile={isMobile} />
         <Preload all />
       </Suspense>
