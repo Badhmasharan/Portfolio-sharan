@@ -61,6 +61,19 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          {/* View Resume Option */}
+          <li
+            className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'
+          >
+            <a
+              href='/resume.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={() => setActive("View Resume")}
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -91,6 +104,22 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              {/* View Resume Option for Mobile Menu */}
+              <li
+                className='font-poppins font-medium cursor-pointer text-[16px] text-secondary hover:text-white'
+              >
+                <a
+                  href='/resume.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive("View Resume");
+                  }}
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
         </div>
