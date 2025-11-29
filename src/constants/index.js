@@ -125,7 +125,6 @@ import {
     {
       title: "Full Stack Development Intern",
       company_name: "SPAGYLO TECH",
-      icon: none,
       iconBg: "#E6DEDD",
       date: "Jul 2024 - Aug 2024",
       points: [
