@@ -117,9 +117,9 @@ import {
       company_name: "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY",
       icon: skcet,
       iconBg: "#ffffff",
-      date: "October 2022 - Oct 2026",
+      date: "October 2022 - April 2026",
       points: [
-       "To bee added soon.",
+       "Proficient in full-stack development, cloud technologies, and data-driven problem-solving.",
       ],
     },
     {
@@ -130,7 +130,6 @@ import {
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
