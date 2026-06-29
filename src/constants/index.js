@@ -7,6 +7,10 @@ import {
     typescript,
     html,
     css,
+    azure,
+    mssql,
+    dotnet,
+    postgresql,
     reactjs,
     redux,
     tailwind,
@@ -19,6 +23,8 @@ import {
     meta,
     starbucks,
     skcet,
+    eygds,
+    spagylo,
     tesla,
     shopify,
     carrent,
@@ -47,19 +53,18 @@ import {
   ];
   
   const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    
+{
+    title: "Full Stack Developer",
+    icon: backend,
+  },
+   {
+    title: "AI Enthusiast",
+    icon: web,
+  },
+ {
+    title: "Database Developer",
+    icon: creator,
+  },
   ];
   
   const technologies = [
@@ -71,21 +76,25 @@ import {
       name: "CSS 3",
       icon: css,
     },
+        {
+      name: ". NET",
+      icon: dotnet,
+    },
     {
       name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Microsoft SQL Server",
+      icon: mssql,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "PostgreSQL",
+      icon: postgresql,
     },
     
     {
@@ -93,13 +102,10 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Azure Cloud",
+      icon: azure,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+
     {
       name: "git",
       icon: git,
@@ -111,82 +117,54 @@ import {
   ];
 
   
-  const experiences = [
-    {
-      title: "CURRENTLY STUDYING",
-      company_name: "SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY",
-      icon: skcet,
-      iconBg: "#ffffff",
-      date: "October 2022 - April 2026",
-      points: [
-       "Proficient in full-stack development, cloud technologies, and data-driven problem-solving.",
-      ],
-    },
-    {
-      title: "Full Stack Development Intern",
-      company_name: "SPAGYLO TECH",
-      iconBg: "#E6DEDD",
-      date: "Jul 2024 - Aug 2024",
-      points: [
+const experiences = [
+  {
+    company_name: "EY GDS",
+    location: "Coimbatore, Tamil Nadu, India",
+    icon: eygds,
+    iconBg: "#ffffff",
+    sub_experiences: [
+      {
+        title: "Associate Software Engineer",
+        type: "Full-time",
+        date: "Jun 2026 - Present · 1 mo",
+        points: [
+          "Continued working as a Full Stack Developer using .NET, React, MSSQL, PostgreSQL and Git.",
+          "Transitioned from intern to full-time Associate Software Engineer.",
+        ],
+      },
+      {
+        title: "Technical Consultant",
+        type: "Internship",
+        date: "Jan 2026 - Jun 2026 · 6 mos",
+        points: [
+          "Worked as a Full Stack Developer using .NET, React, MSSQL, PostgreSQL and Git.",
+        ],
+      },
+    ],
+  },
+
+  {
+    company_name: "SPAGYLO TECH",
+    location: "Coimbatore, Tamil Nadu, India",
+    icon: spagylo,
+    iconBg: "#E6DEDD",
+    sub_experiences: [
+      {
+        title: "Full Stack Development Intern",
+        type: "Internship",
+        date: "Jul 2024 - Aug 2024 · 2 mos",
+        points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    // {
-    //   title: "Web Developer",
-    //   company_name: "Shopify",
-    //   icon: shopify,
-    //   iconBg: "#383E56",
-    //   date: "Jan 2022 - Jan 2023",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Full stack Developer",
-    //   company_name: "Meta",
-    //   icon: meta,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2023 - Present",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-  ];
+        ],
+      },
+    ],
+  },
+];
   
-  // const testimonials = [
-  //   {
-  //     testimonial:
-  //       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-  //     name: "Sara Lee",
-  //     designation: "CFO",
-  //     company: "Acme Co",
-  //     image: "https://randomuser.me/api/portraits/women/4.jpg",
-  //   },
-  //   {
-  //     testimonial:
-  //       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //     name: "Chris Brown",
-  //     designation: "COO",
-  //     company: "DEF Corp",
-  //     image: "https://randomuser.me/api/portraits/men/5.jpg",
-  //   },
-  //   {
-  //     testimonial:
-  //       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //     name: "Lisa Wang",
-  //     designation: "CTO",
-  //     company: "456 Enterprises",
-  //     image: "https://randomuser.me/api/portraits/women/6.jpg",
-  //   },
-  // ];
+ 
   
   const projects = [
     {

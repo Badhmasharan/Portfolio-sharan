@@ -10,7 +10,12 @@ const Hero = () => {
   
   useEffect(() => {
     const options = {
-      strings: ["Badhmasharan", "a Web Developer", "a React Enthusiast", "a JavaScript Ninja"],
+      strings: [
+  "Badhmasharan",
+  "a Full Stack Dev",
+  "a Cloud Enthusiast",
+  "an AI Enthusiast",
+],
       typeSpeed: 100,
       backSpeed: 35,
       loop: true,

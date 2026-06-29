@@ -10,6 +10,10 @@ import linkedin from "./linkedin.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
+import dotnet from "./tech/dotnet.png";
+import azure from "./tech/azure.png";
+import mssql from "./tech/mssql.png";
+import postgresql from "./tech/postg.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -25,7 +29,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import skcet from "./company/skcet.jpeg"
+import skcet from "./company/skcet.jpeg";
+import eygds from "./company/eygds.png";
+import spagylo from "./company/spagylo.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -48,11 +54,17 @@ export {
   git,
   python,
   skcet,
+  eygds,
+  spagylo,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
+  dotnet,
+  azure,
+  mssql,
+  postgresql,
   redux,
   tailwind,
   typescript,
